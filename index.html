@@ -37,5 +37,48 @@ La etiqueta crea un salto de línea de manera que el elemento siguiente se coloc
     a la línea siguiente.</p>
 <p>Este es otro párrafo, tambien creado con la etiqueta p,
     pero más corto.</p>
+ <!-- La <audio>etiqueta se utiliza para incrustar contenido de sonido en un documento, como música u otras transmisiones de audio.
+    La <audio>etiqueta contiene una o más <source>etiquetas con diferentes fuentes de audio. El navegador elegirá la primera fuente que admita.
+    El texto entre las etiquetas <audio>y </audio> solo se mostrará en navegadores que no admitan el <audio>elemento.
+    Hay tres formatos de audio admitidos en HTML: MP3, WAV y OGG. -->
+<h1>Etiquetas multimedia</h1>
+<h2>Etiqueta audio</h2>    
+<audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="media/audio2.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+<!--La <source>etiqueta se usa para especificar varios recursos multimedia para elementos multimedia, como <video> , <audio> y <picture> .
+    La <source>etiqueta le permite especificar archivos de video/audio/imagen alternativos que el navegador puede elegir, 
+    según la compatibilidad del navegador o el ancho de la ventana gráfica. El navegador elegirá el primero <source> que admita. -->
+  <h2>Etiqueta Source</h2>
+  <audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="media/sonido1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+<!--   La <track>etiqueta especifica pistas de texto para elementos <audio> o <video> .
+       Este elemento se usa para especificar subtítulos, archivos de subtítulos u otros archivos que contengan texto,
+       que deben estar visibles cuando se reproduce el medio.
+       Las pistas están formateadas en formato WebVTT (archivos .vtt). -->
+       <h2>Etiqueta track</h2>
+       <video width="320" height="240" controls>
+        <source src="media/video1.mp4" type="video/mp4">
+        <source src="forrest_gump.ogg" type="video/ogg">
+        <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+      </video>
+<!-- 
+      La <video>etiqueta se usa para incrustar contenido de video en un documento, como un clip de película u otras secuencias de video.
+      La <video>etiqueta contiene una o más <source>etiquetas con diferentes fuentes de video. El navegador elegirá la primera fuente que admita.
+      El texto entre las etiquetas <video>y </video> solo se mostrará en navegadores que no admitan el elemento <video>.
+      Hay tres formatos de video compatibles en HTML: MP4, WebM y OGG. -->
+      <h2>Etiqueta de video</h2>
+      <video width="320" height="240" controls>
+        <source src="media/video1.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+
 </body>
 </html>
